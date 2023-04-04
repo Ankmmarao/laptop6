@@ -62,7 +62,7 @@ if st.checkbox("What know your Computer is found or not? "):
     if data['price']==a:
           print('It is found',data['prize'])
     else:
-          print("Not available
+          print("Not available") 
 
           
           
