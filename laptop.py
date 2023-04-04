@@ -58,11 +58,11 @@ if st.checkbox("Get the corr of the dataset"):
     n=(data.corr())
     st.write(n)
 if st.checkbox("What know your Computer is found or not? "):
-    a=int(input(" Enter your Laptop Name:")
-    for i in range('name'):
-          if name==a:
-          print("It is Found ", a) 
-          else:
-          print(" It is not found ", a) 
+    a=int(input(" Enter your Laptop price:")
+    if data['price']==a:
+          print('It is found',data['prize'])
+    else:
+          print("Not available
+
           
           
