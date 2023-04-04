@@ -31,12 +31,12 @@ if uploaded_file is not None:
 if st.checkbox("Get the head of the data"):
     st.write(data.head())
 if st.checkbox("Get the mean of the all the laptaps"):
-    st.write(data['price(in Rs.)'].mean())
+    st.write(data['price'].mean())
 if st.checkbox("Get the maimum price of the laptap"):
-    st.write(data['price(in Rs.)'].max())
+    st.write(data['price'].max())
     
 if st.checkbox("Get the minimum price of the laptap"):
-     st.write(data['price(in Rs.)'].min())
+     st.write(data['price'].min())
 if st.checkbox("Get the columns of the Dataset"):
     st.write(data.columns)
 if st.checkbox("Get the shape of the Dataset"):
@@ -50,7 +50,7 @@ if st.checkbox("Get the None_null value of the dataset"):
 if st.checkbox("Get the index of the Dataset"):
     st.write(data.index)
 if st.checkbox("Rename the price(in Rs.) to the price"):
-    A=data.rename(columns={'price(in Rs.)':'price'},inplace=True)
+    A=data.rename(columns={'price':'price'},inplace=True)
     st.write(A)
     st.write(data.head())
 
