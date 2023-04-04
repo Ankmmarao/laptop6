@@ -57,12 +57,9 @@ if st.checkbox("Rename the price(in Rs.) to the price"):
 if st.checkbox("Get the corr of the dataset"):
     n=(data.corr())
     st.write(n)
-if st.checkbox("What know your Computer is found or not? "):
-    a=int(input(" Enter your Laptop price:")
-    if data['price']==a:
-          print('It is found',data['prize'])
-    else:
-          print("Not available") 
-
+if st.checkbox("Get the correlation Between Max and Min price"):
+    st.write(corr(dat['price'].max(), data['price'].min()) 
+    
+          
           
           
