@@ -57,11 +57,10 @@ if st.checkbox("Rename the price(in Rs.) to the price"):
 if st.checkbox("Get the corr of the dataset"):
     n=(data.corr())
     st.write(n)
-if st. checkbox ("Enter your Price what you want"):
-    a=st.int(input("Enter the Price:")
-    b=(data['price'].max())
     
-    st.write("Difference is:",b-a)
+if st. checkbox ("Get the Heat map of corr()"):
+    sns.heatmap(n,annot="True", camp="RB") 
+    
                 
           
           
