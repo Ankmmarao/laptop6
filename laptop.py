@@ -68,5 +68,5 @@ fig = px.bar(df, x="price", y=["no_of_rating"," no_of_reviews "], barmode='group
 # st.dataframe(df) # if need to display dataframe
 st.plotly_chart(fig)
           
-          
+         
           
