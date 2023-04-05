@@ -57,9 +57,13 @@ if st.checkbox("Rename the price(in Rs.) to the price"):
 if st.checkbox("Get the corr of the dataset"):
     n=(data.corr())
     st.write(n)
-if st.checkbox("Get the correlation Between Max and Min price"):
-    st.write(corr(dat['price'].max(), data['price'].min()) 
-    
+if st. checkbox ("Enter your Price what you want"):
+    a=st.int(input("Enter the Price:")
+    b=data['price']
+    if st.a==st.b:
+             print("The prices are:",b)
+    else:
+             print("Not Available:",b) 
           
           
           
