@@ -60,7 +60,7 @@ if st.checkbox("Get the corr of the dataset"):
     
 if st. checkbox ("Get the Review Based on prices"):
     df = pd.DataFrame(
-    [["price"]],
+    [["price"],
     columns=["price", "no_of_rating"," no_of_reviews "]
 )
 
