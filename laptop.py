@@ -32,7 +32,11 @@ if st.checkbox("Get the head of the data"):
     st.write(data.head())
 if st.checkbox("Get the mean of the all the laptaps"):
     st.write(data['price'].mean())
-
+if st.checkbox("Get the maimum price of the laptap"):
+    st.write(data['price'].max())
+    
+if st.checkbox("Get the minimum price of the laptap"):
+     st.write(data['price'].min())
 if st.checkbox("Get the columns of the Dataset"):
     st.write(data.columns)
 if st.checkbox("Get the shape of the Dataset"):
