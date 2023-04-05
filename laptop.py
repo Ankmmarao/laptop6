@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 import random
-
+import plotly.express as px
 from PIL import Image
 logo = Image.open('logo1.png')
 #pip install pandas numpy matplotlib seaborn streamlit
@@ -58,10 +58,15 @@ if st.checkbox("Get the corr of the dataset"):
     n=(data.corr())
     st.write(n)
     
-if st. checkbox ("Get the Heat map of corr()"):
-    sns.heatmap(n,annot="True", camp="RB") 
-    
-                
+if st. checkbox ("Get the Review Based on prices"):
+    df = pd.DataFrame(
+    [["price",40000,50000,60000,70000]],
+    columns=["Product", "Comfort", "Sound", "Calls"]
+)
+
+fig = px.bar(df, x="Product", y=["Comfort", "Sound", "Calls"], barmode='group', height=400)
+# st.dataframe(df) # if need to display dataframe
+st.plotly_chart(fig)
           
           
           
