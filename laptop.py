@@ -57,9 +57,10 @@ if st.checkbox("get the pro"):
     ab=st.beta_container()
     vk=st.beta_container()
     abd=st.beta_container()
-st.header("The distribution of each os")
-a=pd.read_csv(r"C:\Users\HP\Downloads\Laptop1.csv")
-man=pd.Dataframe(a['os'].unique())
-st.bar_chart(man)
+    with vk:
+        st.header("The distribution of each os")
+        a=pd.read_csv(r"C:\Users\HP\Downloads\Laptop1.csv")
+        man=pd.Dataframe(a['os'].unique())
+        st.bar_chart(man)
     
         
