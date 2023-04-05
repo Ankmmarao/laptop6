@@ -54,16 +54,9 @@ if st.checkbox("Rename the price(in Rs.) to the price"):
     st.write(A)
     st.write(data.head())
 
-if st.checkbox("Get the corr of the dataset"):
-    n=(data.corr())
-    st.write(n)
-if st.checkbox("Get the Review Based on prices"):
-    df = pd.DataFrame([["service",4,4.5,],["service1",3.5,3]],columns=["price", "no_of_rating"," no_of_reviews "])
 
-
-fig = px.bar(df, x="price", y=["no_of_rating"," no_of_reviews "], barmode='group', height=400)
-# st.dataframe(df) # if need to display dataframe
-st.plotly_chart(fig)
           
-        
+ if st.checkbox("get"):
+    abc=['NONE',15.6,15.7,14.3]
+    st.write("return",abc)       
           
