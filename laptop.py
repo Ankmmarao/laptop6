@@ -53,7 +53,12 @@ if st.checkbox("Rename the price(in Rs.) to the price"):
     A=data.rename(columns={'price':'price'},inplace=True)
     st.write(A)
     st.write(data.head())
-if st.checkbox("get"):
-    abc=['NONE',15.6,15.7,14.3]
-    st.write("return",abc)       
-          
+if st.checkbox("get the pro"):
+    ab=st.beta_container()
+    vk=st.beta.container()
+    abd=st.beta_container()
+    with:
+        st.header("The distribution of each os")
+        su=p.read_csv(r,"C:\Users\HP\Downloads\Laptop1.csv")
+        man=pd.Dataframe(su['os'].value_counts())
+        st.bar_chart(man)
