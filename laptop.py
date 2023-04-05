@@ -61,7 +61,7 @@ if st.checkbox("Get the Review Based on prices"):
     df = pd.DataFrame([["price",50000,30000,],["price1",30000,45000]],columns=["price", "no_of_rating"," no_of_reviews "])
 
 
-fig = px.bar(df, x="price", y=["no_of_rating"," no_of_reviews "], barmode='group', height=400)
+fig = px.bar(df, y="price", x=["no_of_rating"," no_of_reviews "], barmode='group', height=400)
 # st.dataframe(df) # if need to display dataframe
 st.plotly_chart(fig)
           
