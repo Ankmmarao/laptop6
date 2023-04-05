@@ -53,10 +53,7 @@ if st.checkbox("Rename the price(in Rs.) to the price"):
     A=data.rename(columns={'price':'price'},inplace=True)
     st.write(A)
     st.write(data.head())
-
-
-          
- if st.checkbox("get"):
+if st.checkbox("get"):
     abc=['NONE',15.6,15.7,14.3]
     st.write("return",abc)       
           
