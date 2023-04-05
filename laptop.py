@@ -59,7 +59,7 @@ if st.checkbox("Get the corr of the dataset"):
     st.write(n)
 if st. checkbox ("Enter your Price what you want"):
     a=st.int(input("Enter the Price:")
-    b=data['price']
+    b=st.data['price']
     if st.a==st.b:
              print("The prices are:",b)
     else:
