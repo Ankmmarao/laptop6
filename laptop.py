@@ -59,11 +59,8 @@ if st.checkbox("Get the corr of the dataset"):
     st.write(n)
 if st. checkbox ("Enter your Price what you want"):
     a=st.int(input("Enter the Price:")
-    b=st.(data['price']) 
-    if st.a==st.b:
-             print("The prices are:",st.write(b)) 
-    else:
-             print("Not Available:",st.write(a)) 
+    b=st.write(data['price'].max()) 
+    st.write("Difference is:",b-a)
                 
           
           
