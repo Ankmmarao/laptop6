@@ -55,7 +55,7 @@ if st.checkbox("Rename the price(in Rs.) to the price"):
     st.write(data.head())
 if st.checkbox("get the pro"):
     ab=st.beta_container()
-    vk=st.beta.container()
+    vk=st.beta_container()
     abd=st.beta_container()
 st.header("The distribution of each os")
 su=p.read_csv(r"C:\Users\HP\Downloads\Laptop1.csv")
