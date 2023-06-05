@@ -53,14 +53,9 @@ if st.checkbox("Rename the price(in Rs.) to the price"):
     A=data.rename(columns={'price':'price'},inplace=True)
     st.write(A)
     st.write(data.head())
-if st.checkbox("get the pro"):
-    ab=st.beta_container()
-    vk=st.beta_container()
-    abd=st.beta_container()
-    with vk:
-        st.header("The distribution of each os")
-        data=pd.read_csv(uploaded_file)
-        man=pd.DataFrame(a['os'].unique())
-        st.bar_chart(man)
+if st.checkbox("The Graphical Represantatin of the price vs Laptop type"):
+    a=st.write(pd.DataFrame(data['price']))
+    b=st.write(pd.DataFrame(data['name']))
+    st.write(scatter(a,b))
     
         
