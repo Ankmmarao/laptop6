@@ -84,10 +84,8 @@ if st.checkbox("By using the Descibe function Analysize price of the Each laptop
 if st.checkbox("Get the total no.of Laptops in the Dataset:"):
     st.write(data['price'].count())
 if st.checkbox("Get the all the unique processor:"):
-    st.write(pd.DataFrame(data['processor_name
-']))
-hobby = st.selectbox("os: ",
-                     ['windows', 'mac', 'os'])
+    st.write(pd.DataFrame(data['processor_name']))
+hobby = st.selectbox("os: ",['windows', 'mac', 'os'])
  
 # print the selected hobby
 st.write("Your hobby is: ", data.iloc[hobby])
