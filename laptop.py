@@ -6,7 +6,7 @@ import streamlit as st
 import random
 import plotly.express as px
 from PIL import Image
-logo = Image.open(r'C:\Users\India\Pictures\durgamma.png')
+logo = Image.open(r'C:\Users\India\Pictures\logo1.png')
 #pip install pandas numpy matplotlib seaborn streamlit
 #to run strealit :   streamlit run test2.py 
 
@@ -59,7 +59,7 @@ if st.checkbox("The Graphical Represantatin of the price vs Laptop type"):
     st.write(plt.scatter(a,b))
 if st.checkbox("The Graphical Represantation of the price"):
     v=st.write(pd.DataFrame(data['price']))
-    st.write(hist(v))
+    st.write(plt.hist(v))
 if st.checkbox("Select type of the processor"):
     st.checkbox( "Get the size of the DataSet:")
     st.write(data.size)
