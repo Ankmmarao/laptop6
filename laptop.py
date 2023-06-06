@@ -55,7 +55,7 @@ if st.checkbox("Rename the price(in Rs.) to the price"):
     st.write(data.head())
 if st.checkbox("The Graphical Represantatin of the price vs Laptop type"):
     
-    st.write(plt.scatter(pd.DataFrame(data['price']),pd.DataFrame(data['name'])))
+    st.write(plt.scatter((pd.DataFrame(data['price'])),(pd.DataFrame(data['name']))))
 if st.checkbox("The Graphical Represantation of the price"):
   
     st.write(plt.hist(pd.DataFrame(data['price'])))
@@ -85,8 +85,6 @@ if st.checkbox("Get the total no.of Laptops in the Dataset:"):
     st.write(data['price'].count())
 if st.checkbox("Get the all the unique processor:"):
     st.write(pd.DataFrame(data['processor_name']))
-hobby = st.selectbox("os: ",['windows', 'mac', 'os'])
- 
-# print the selected hobby
-st.write("Your hobby is: ", data.iloc[hobby])
-        
+if st.checkbox('Select your os laptops:'):
+    hobby = st.selectbox("os: ",['windows', 'Dos', 'Mac'])
+    st.write("Your hobby is: ", data.loc[hobby])
