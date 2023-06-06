@@ -6,7 +6,7 @@ import streamlit as st
 import random
 import plotly.express as px
 from PIL import Image
-logo = Image.open("C:\Users\India\Pictures\durgamma.png")
+logo = Image.open('C:\Users\India\Pictures\durgamma.png')
 #pip install pandas numpy matplotlib seaborn streamlit
 #to run strealit :   streamlit run test2.py 
 
