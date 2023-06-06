@@ -56,6 +56,35 @@ if st.checkbox("Rename the price(in Rs.) to the price"):
 if st.checkbox("The Graphical Represantatin of the price vs Laptop type"):
     a=st.write(pd.DataFrame(data['price']))
     b=st.write(pd.DataFrame(data['name']))
-    st.write(scatter(a,b))
-    
+    st.write(plt.scatter(a,b))
+if st.checkbox("The Graphical Represantation of the price"):
+    v=st.write(pd.DataFrame(data['price']))
+    st.write(hist(v))
+if st.checkbox("Select type of the processor"):
+    st.checkbox( "Get the size of the DataSet:")
+    st.write(data.size)
+if st.checkbox("Get the Indexes of the DataSet:"):
+    st.write(data.index)
+if st.checkbox("Get the Shape of the DataSet:"):
+    st.write(data.shape)
+if st.checkbox("Get the Unique processors of the Laptop:"):
+    st.write(data['processor'].unique())
+if st.checkbox("Get the Unique of the Laptops:"):
+    st.write(data['name'].unique())
+if st.checkbox("Get the Unique of the Operating Syatem:"):
+    st.write(data['os'].unique())
+#now the statistical part is there
+if st.checkbox("Get the Average price of the laptop:"):
+    st.write(data['price'].sum())
+if st.checkbox("Get the mac price of the laptop:"):
+    st.write(data['price'].max())
+if st.checkbox("Get minimum price of the laptop price:"):
+    st.write(data['price'].min())
+if st.checkbox("By using the Descibe function Analysize price of the Each laptop:"):
+    st.write(data['price'].describe())
+if st.checkbox("Get the total no.of Laptops in the Dataset:"):
+    st.write(data['price'].count())
+if st.checkbox("Get the all the unique processor:"):
+    st.write(pd.DataFrame(data['processor']))
+
         
