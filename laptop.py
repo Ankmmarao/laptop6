@@ -86,5 +86,5 @@ if st.checkbox("Get the total no.of Laptops in the Dataset:"):
 if st.checkbox("Get the all the unique processor:"):
     st.write(pd.DataFrame(data['processor_name']))
 if st.checkbox('Select your os laptops:'):
-    hobby = st.selectbox("os: ",['windows', 'Dos', 'Mac'])
-    st.write("Your hobby is: ", data.loc[data['hobby'] == 'windows'])
+    os = st.selectbox("os: ",['windows', 'Dos', 'Mac'])
+    st.write("Your os is: ", data.loc[data['os'] == 'windows'])
