@@ -54,12 +54,11 @@ if st.checkbox("Rename the price(in Rs.) to the price"):
     st.write(A)
     st.write(data.head())
 if st.checkbox("The Graphical Represantatin of the price vs Laptop type"):
-    a=st.write(pd.DataFrame(data['price']))
-    b=st.write(pd.DataFrame(data['name']))
-    st.write(plt.scatter(a,b))
+    
+    st.write(plt.scatter(pd.DataFrame(data['price']),pd.DataFrame(data['name'])))
 if st.checkbox("The Graphical Represantation of the price"):
-    v=st.write(pd.DataFrame(data['price']))
-    st.write(plt.hist(v))
+  
+    st.write(plt.hist(pd.DataFrame(data['price'])))
 if st.checkbox("Select type of the processor"):
     st.checkbox( "Get the size of the DataSet:")
     st.write(data.size)
@@ -68,7 +67,7 @@ if st.checkbox("Get the Indexes of the DataSet:"):
 if st.checkbox("Get the Shape of the DataSet:"):
     st.write(data.shape)
 if st.checkbox("Get the Unique processors of the Laptop:"):
-    st.write(data['processor'].unique())
+    st.write(data['processor_name'].unique())
 if st.checkbox("Get the Unique of the Laptops:"):
     st.write(data['name'].unique())
 if st.checkbox("Get the Unique of the Operating Syatem:"):
@@ -85,6 +84,11 @@ if st.checkbox("By using the Descibe function Analysize price of the Each laptop
 if st.checkbox("Get the total no.of Laptops in the Dataset:"):
     st.write(data['price'].count())
 if st.checkbox("Get the all the unique processor:"):
-    st.write(pd.DataFrame(data['processor']))
-
+    st.write(pd.DataFrame(data['processor_name
+']))
+hobby = st.selectbox("os: ",
+                     ['windows', 'mac', 'os'])
+ 
+# print the selected hobby
+st.write("Your hobby is: ", data.iloc[hobby])
         
