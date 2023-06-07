@@ -88,3 +88,11 @@ if st.checkbox("Get the all the unique processor:"):
 if st.checkbox('Select your os laptops:'):
     os = st.selectbox("os: ",['windows', 'Dos', 'Mac'])
     st.write("Your os is: ", data.loc[data['os'] == 'windows'])
+if st.checkbox("The price of of the each Laptop:"):
+    st.write(plt.hist(data['price']))
+if st.checkbox("The Different types of the Os Laptops:"):
+    st.write(plt.hist(data['os'].unique()))
+if st.checkbox("The Differnt types of the Laptops:"):
+    st.write(plt.hist(data['name'].unique()))
+if st.checkbox("The Different processorname:"):
+    st.write(plt.hist(data['processor_name'].unique()))
